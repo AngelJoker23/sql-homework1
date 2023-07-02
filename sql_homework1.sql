@@ -44,4 +44,13 @@ where amount between 380 and 430
 group by customer_id, amount, rental_id
 having count(customer_id) > 250
 
+--10. Within the film table, how many rating categories are there? And what rating has the most movies total?
+select rating, title
+from film
+group by title, rating   
+order by rating desc;
+
+
+
+
 
